@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="./Images/Spotify_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="./SVG/logo.svg" alt="Spotify logo">
+            <div class="input flex items-center">
+                <div class="home flex items-center justify-center">
+                    <img class="home_icon svg-size" src="./SVG/home.svg" alt="Home icon">
+                </div>
+                <div class="search-contain flex justify-center items-center">
+                    <div class="search flex items-center justify-center">
+                        <img class="searchsvg svg-size flex items-center" src="./SVG/search.svg" alt="">
+                    </div>
+                    <input class="searchbar" type="text" placeholder="What do you want to play?">
+                    <div class="random">
+                        <img class=" lock svg-size flex items-center" src="./SVG/lock.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="nav-links flex justify-center items-center">
+                <a href="#" class="nav-link">Premium</a>
+                <a href="#" class="nav-link">Support</a>
+                <a href="#" class="nav-link">Download</a>
+                <div class="seperate">|</div>
+                <div class="install1 flex justify-center items-center">
+                    <img style="height: 17px; width: 17px;" class="download-icon svg-size flex items-center"
+                        src="./SVG/download.svg" alt="">
+                    <div class="install">Install Apps</div>
+                </div>
+                <div class="install">Sign up</div>
+                <button class="login"> Log in</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container flex">
+            <div class="left">
+                <div class="lib flex items-center">
+                    <div class="library">Your Library</div>
+                    <div class="plus flex justify-center items-center">
+                        <img src="./SVG/plus.svg" style="height: 17px; width: 17px;" class="add-icon" alt="">
+                    </div>
+                </div>
+
+                <div class="box">
+                    <p class="title">Create your first playlist</p>
+                    <p class="desc">It's easy, we will help you</p>
+                    <button class="box-btn">Create Playlist</button>
+                </div>
+
+                <div class="box">
+                    <p class="title">Let's find some podcasts to follow</p>
+                    <p class="desc">We'll keep you updated on new episodes</p>
+                    <button class="box-btn">Browse Podcasts</button>
+                </div>
+
+                <div class="info-section flex">
+                    <div class="important-links">
+                        <span>Legal</span>
+                        <span>Safety & Privacy Center</span>
+                        <span>Privacy Policy</span>
+                        <span>Cookies</span>
+                    </div>
+                    <div class="important-links">
+                        <span>About Ads</span>
+                        <span>Accessibility</span>
+                    </div>
+
+                    <div class="cookies">Cookies</div>
+
+                    <button class="language flex items-center">
+                        <img src="./SVG/globe.svg" class="flex items-center" style="height: 17px; width: 17px;" alt="">
+                        English</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="heading flex items-center">
+                    <h1>Trending Songs</h1>
+                    <span>Show all</span>
+                </div>
+                <div class="songs flex items-center">
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/First.jpg" alt="">
+                        <h2>For A Reason</h2>
+                        <span>Karan Aujla, Ikky</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Second.jpg" alt="">
+                        <h2>Azul</h2>
+                        <span>Guru Randhawa, Gurjit Gill, Lavish Dhiman</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Third.jpg" alt="">
+                        <h2>Deva Shree Ganesha</h2>
+                        <span>Ajay-Atul, Ajay Gogavale</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Fourth.jpg" alt="">
+                        <h2>Badli Si Hawa Hai</h2>
+                        <span>Anirudh Ravichander, Arijit Singh, Amira Gill, Kumaar</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Fifth.jpg" alt="">
+                        <h2>Tattoo</h2>
+                        <span>Arjan Dhillon</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Sixth.jpg" alt="">
+                        <h2>Ganjanana</h2>
+                        <span>Sukhwinder Singh, Prashant Ingole, Shreyas...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Seventh.jpg" alt="">
+                        <h2>Pardesiya</h2>
+                        <span>Sachin-Jigar, Sonu Nigam, Krishnakali</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Eighth.jpg" alt="">
+                        <h2>Pal Pal Jeena Muhal</h2>
+                        <span>Rehman Ansar
+
+                        </span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Ninth.jpg" alt="">
+                        <h2>Sahiba</h2>
+                        <span>Aditya Rikhari</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Tenth.jpg" alt="">
+                        <h2>Arz Kiya Hai | Coke Studio Bharat</h2>
+                        <span>Anuv Jain</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Eleventh.jpg" alt="">
+                        <h2>Saiyaara - Old Version</h2>
+                        <span>lunar tones</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Twelvth.jpg" alt="">
+                        <h2>Timeless (JudeBox)</h2>
+                        <span>Hustinder</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Thirteenth.jpg" alt="">
+                        <h2>Guzaara ("Baaghi 4")</h2>
+                        <span>Josh Brar, Parampara Tandon, Kumaar, Bunty</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Fourtheenth.jpg" alt="">
+                        <h2>Jutti Meri (Live)</h2>
+                        <span>Neha Bhasin</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Fifteenth.jpg" alt="">
+                        <h2>Gann Deva Lyrical</h2>
+                        <span> Divya Kumar, Sachin-Jigar</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Sixteenth.jpg" alt="">
+                        <h2>Balenci</h2>
+                        <span>Shubh</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Seventeenth.jpg" alt="">
+                        <h2>Besharam</h2>
+                        <span>Shree-Ishq, lalit Pandit</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Eighteenth.jpg" alt="">
+                        <h2>Banjo (Bappa)</h2>
+                        <span>Ritesh Deshmukh & Nargis Fakhri</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                </div>
+
+                <div class="heading flex items-center">
+                    <h1>Popular artists</h1>
+                    <span>Show all</span>
+                </div>
+
+                <div class="card-img-round  songs flex items-center">
+                    <div class="card flex items-center">
+                        <img src="./Images/Pritam.jpg" alt="">
+                        <h2>Pritam</h2>
+                        <span>Artist</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img class="card-img-round" src="./Images/A_R_Rahman.jpg" alt="">
+                        <h2>A. R. Rahman</h2>
+                        <span>Artist</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img class="card-img-round" src="./Images/Arijit_Singh.jpg" alt="">
+                        <h2>Arijit Singh</h2>
+                        <span>Artist</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img class="card-img-round" src="./Images/Sachin_Jigar.jpg" alt="">
+                        <h2>Sachin-Jigar</h2>
+                        <span>Artist</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img class="card-img-round" src="./Images/Vishal_Sekhar.jpg" alt="">
+                        <h2>Vishal-Shekhar</h2>
+                        <span>Artist</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img class="card-img-round" src="./Images/Atif_Aslam.jpg" alt="">
+                        <h2>Atif Aslam</h2>
+                        <span>Artist</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img class="card-img-round" src="./Images/Anirudh_Ravichander.jpg" alt="">
+                        <h2>Anirudh Ravichander</h2>
+                        <span>Artist</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img class="card-img-round" src="./Images/Udit_Narayan.jpg" alt="">
+                        <h2>Udit Narayan</h2>
+                        <span>Artist</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img class="card-img-round" src="./Images/Honey_Singh.jpg" alt="">
+                        <h2>Yo Yo Honey Singh</h2>
+                        <span>Artist</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img class="card-img-round" src="./Images/Shankar_Ahsan_Loy.jpg" alt="">
+                        <h2>Shankar-Ehsaan-Loy</h2>
+                        <span>Artist</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                </div>
+
+                <div class="heading flex items-center">
+                    <h1>Popular albums and singles</h1>
+                    <span>Show all</span>
+                </div>
+
+
+                <div class="songs flex items-center">
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Popular_one.jpg" alt="">
+                        <h2>Aashiqui 2</h2>
+                        <span>Mithoon, Ankit Tiwari, Jeet Ganguli</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Popular_two.jpg" alt="">
+                        <h2>Ye Jawani Hai Diwani</h2>
+                        <span>Pritam</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Popular_three.jpg" alt="">
+                        <h2>Sanam Teri Kasam (Orignal Motion...)</h2>
+                        <span>Himesh Reshammiya, Sameer Anjaan, Subrat...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Popular_four.jpg" alt="">
+                        <h2>Finding Her</h2>
+                        <span>Kushagra, Bharath, Saaheal</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Popular_five.jpg" alt="">
+                        <h2>Young G.O.A.T</h2>
+                        <span>Cheema Y, Gur Sidhu</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Popular_six.jpg" alt="">
+                        <h2>Raanjhan ("Do Patti")</h2>
+                        <span>Sachet-Parampara, Parampara Tandon, Kaus...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Popular_seven.jpg" alt="">
+                        <h2>Channa Mereya</h2>
+                        <span>Arijit Singh</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Popular_eight.jpg" alt="">
+                        <h2>Making Memories</h2>
+                        <span>Karan Aujla, Ikky</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Popular_nine.jpg" alt="">
+                        <h2>Moosetape</h2>
+                        <span>Shidu Moose Wala</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center SongCard">
+                        <img src="./Images/Popular_ten.jpg" alt="">
+                        <h2>Sicario</h2>
+                        <span>Shubh</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                </div>
+
+                <div class="heading flex items-center">
+                    <h1>Popular radio</h1>
+                    <span>Show all</span>
+                </div>
+
+                <div class="songs flex items-center">
+                    <div class="card flex items-center">
+                        <img src="./Images/Radio_one.jpg" alt="">
+                        <span class="mt-8">With Jeet Ganguli, <br> Sachet Tandon, Pritam</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Radio_two.jpg" alt="">
+                        <span class="mt-8">With Pritam, Mustafa <br> Zahid, Atif Aslam and...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Radio_three.jpg" alt="">
+                        <span class="mt-8">With A.R. Rahman, <br> Salim-Sulaiman , Atif...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Radio_four.jpg" alt="">
+                        <span class="mt-8">With Vinod Rathod, <br> Kumar Sanu, Udit... </span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Radio_five.jpg" alt="">
+                        <span class="mt-8">With Karan Aujla, Shubh, <br> Sidhu Moose Wala and...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Radio_six.jpg" alt="">
+                        <span class="mt-8">With Anirudh <br> Ravichander, Yuvan...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Radio_seven.jpg" alt="">
+                        <span class="mt-8">With Guru Randhawa, <br> Badshah, Harry Sandh...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Radio_eight.jpg" alt="">
+                        <span class="mt-8">With Shubh, AP Dhillon, <br> Sharry Mann and more</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Radio_nine.jpg" alt="">
+                        <span class="mt-8">With Mukesh, Tabassum, <br> Lata Mangeshkar and...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Radio_ten.jpg" alt="">
+                        <span class="mt-8">With Anuradha Paudwal, <br> Alka Yagnik, Jatin-Lalit...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                </div>
+
+                <div class="heading flex items-center">
+                    <h1>Featured Charts</h1>
+                    <span>Show all</span>
+                </div>
+
+
+                <div class="songs flex items-center">
+                    <div class="card flex items-center">
+                        <img src="./Images/Featured_one.jpg" alt="">
+                        <span class="mt-8">The weekly update of <br> the most played tracks...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Featured_two.jpg" alt="">
+                        <span class="mt-8">The weekly update of <br> the most played tracks...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Featured_three.jpg" alt="">
+                        <span class="mt-8">Your daily update of the <br> most played tracks right...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Featured_four.jpg" alt="">
+                        <span class="mt-8">Your daily update of the <br> most played tracks right...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Featured_five.jpg" alt="">
+                        <span class="mt-8">Your daily update of the <br> most played viral right...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="card flex items-center">
+                        <img src="./Images/Featured_six.jpg" alt="">
+                        <span class="mt-8">Your daily update of the <br> most viral tracks right...</span>
+                        <div role="button" class="play-btn flex justify-center items-center"><i
+                                class="fa-solid fa-play"></i></div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="separator"></div>
+                    <div class="footer-section flex ">
+                        <ul>
+                            <h3>Company</h3>
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>For the Record</li>
+                        </ul>
+
+                        <ul>
+                            <h3>Communities</h3>
+                            <li>For Artists</li>
+                            <li>Developers</li>
+                            <li>Advertising</li>
+                            <li>Investors</li>
+                            <li>Vendors</li>
+                        </ul>
+
+                        <ul>
+                            <h3>Useful links</h3>
+                            <li>Support</li>
+                            <li>Free Mobile App</li>
+                            <li>Popular by Country</li>
+                            <li>Import your Music</li>
+                        </ul>
+
+                        <ul>
+                            <h3>Spotify Plans</h3>
+                            <li>Premium Individual</li>
+                            <li>Premium Duo</li>
+                            <li>Premium Family</li>
+                            <li>Premium Student</li>
+                            <li>Spotify Free</li>
+                        </ul>
+
+                        <div class="flex svg-list">
+                            <div class="social-svg flex items-center justify-center">
+                                <img class="svg-size-sm" src="./SVG/instagram.svg" alt="Home icon">
+                            </div>
+                            <div class="social-svg flex items-center justify-center">
+                                <img class="svg-size-sm" src="./SVG/twitter.svg" alt="Home icon">
+                            </div>
+                            <div class="social-svg flex items-center justify-center">
+                                <img class="svg-size-sm" src="./SVG/facebook.svg" alt="Home icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="copyright">&copy;2025SpotifyAB</div>
+                </footer>
+
+            </div>
+        </section>
+        <section class="play-section">
+            <div class="now-playing">
+                <h3>For A Reason</h3>
+                <span>Karan Aujla</span>
+            </div>
+            <div class="playbar">
+                <img src="./SVG/previous.svg" id="previous" alt="">
+                <img src="./SVG/play.svg" id="play" alt="">
+                <img src="./SVG/next.svg" id="next" alt="">
+            </div>
+            <div class="timestamp">
+
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
