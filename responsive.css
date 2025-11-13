@@ -1,0 +1,35 @@
+@media only screen and (max-width: 420px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;           /* full screen height */
+    overflow: hidden;        /* body scroll ko rokna */
+  }
+
+  .left {
+    width: 100%;
+    height: auto;
+    min-height: 80px;        /* header/toolbar ka size */
+    padding: 10px;
+    flex-shrink: 0;
+    background: #1f1f1f;     /* optional background */
+  }
+
+  .right {
+    width: 100%;
+    flex: 1;                 /* remaining space le */
+    height: calc(100vh - 80px); /* full height minus left */
+    overflow-y: auto;        /* right panel scrollable */
+  }
+
+  main > section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;        /* scroll sirf .right me allow */
+  }
+
+}
